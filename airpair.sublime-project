@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/grant/Git/Airpair132808",
+            "folder_exclude_patterns": ["node_modules", "dist", "app/bower_components", ".tmp"]
+		}
+	]
+}
