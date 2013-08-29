@@ -1,9 +1,24 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<h1>Airpair Tabs</h1>
+<hr/>
+<ul class="nav nav-pills well">
+	<li>
+		<a href="#/main/groups">Groups</a>
+	</li>
+	<li>
+		<a href="#/main/group/1">Specific Group 1</a>
+	</li>
+	<li>
+		<a href="#/main/group/2">Specific Group 2</a>
+	</li>
+</ul>
+
+<ul class="nav nav-tabs">
+	<li ng-repeat="tab in tabs"
+		ng-class="{active: currentTab == tab}">
+		<a href="#{{tab.location}}">
+			{{tab.name}}
+		</a>
+	</li>
+</ul>
+
+<div ui-view></div>
